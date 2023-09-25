@@ -2,5 +2,5 @@
 
 ## Authors
 
-- [@NoaBrechct](https://www.github.com/NoaBrecht)
+- [@NoaBrecht](https://www.github.com/NoaBrecht)
 
