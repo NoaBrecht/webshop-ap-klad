@@ -3,8 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <meta name="author" content="Noa Van den Berghe">
-    <title>TechNest</title>
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style/reset.css" /> -->
+    <link rel="stylesheet" href="style/style.css" />
   </head>
-  <body></body>
+  <body>
+    <!-- NAV -->
+    <div w3-include-html="components/topnav.html"></div>
+    <!-- END NAV -->
+    <!-- FOOTER -->
+    <div id="bubble-wrapper"></div>
+
+    <div w3-include-html="components/footer.html"></div>
+
+    <!-- END FOOTER -->
+  </body>
+  <script src="javascript/script.js"></script>
+
+  <script>
+    includeHTML();
+  </script>
 </html>
