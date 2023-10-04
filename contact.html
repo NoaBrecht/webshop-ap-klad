@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta author="Noa Van den Berghe" />
+    <title>Home</title>
+    <!-- <link rel="stylesheet" href="style/reset.css" /> -->
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body onload="init()">
+    <!-- NAV -->
+    <div w3-include-html="components/topnav.html"></div>
+    <!-- END NAV -->
+
+    <!-- FOOTER -->
+    <div id="bubble-wrapper"></div>
+
+    <div w3-include-html="components/footer.html"></div>
+
+    <!-- END FOOTER -->
+  </body>
+  <script src="javascript/script.js"></script>
+
+  <script>
+    includeHTML();
+  </script>
+  <script defer>
+    async function init() {
+      await sleep(250);
+
+      // Zet in de sidebar de huidige pagina actief.
+      document.getElementById("contact").classList.add("active");
+      console.log("contact page heeft de class active gekregen na 250ms");
+    }
+    async function sleep(ms) {
+      return new Promise((resolve) => setTimeout(resolve, ms));
+    }
+  </script>
+</html>
